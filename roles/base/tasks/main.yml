@@ -1,6 +1,6 @@
 ---
     - name: Install Requirements
-      apt: name="{{ item }}" state=absent
+      apt: name="{{ item }}" state=present
       loop:
         - python
         - python-setuptools
